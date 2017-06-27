@@ -1,7 +1,7 @@
 {
     "scripts": {
-        "build": "webpack",
-        "watch": "webpack -d -w"
+        "build": "webpack --config webpack.config.prod.js",
+        "watch": "webpack --config webpack.config.dev.js -d -w"
     },
     "dependencies": {
         "sulu-admin-bundle": "file:vendor/sulu/sulu/src/Sulu/Bundle/AdminBundle/Resources/js"
