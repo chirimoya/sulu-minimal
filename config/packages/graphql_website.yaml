@@ -1,0 +1,11 @@
+#overblog_graphql:
+#    definitions:
+#        mappings:
+#            types:
+#                -
+#                    type: yaml
+#                    dir: '%kernel.root_dir%/../config/graphql'
+#        schema:
+#            query: ContentRepository
+#            mutation: ~
+#            types: []

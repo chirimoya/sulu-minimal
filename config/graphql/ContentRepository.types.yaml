@@ -1,0 +1,12 @@
+ContentRepository:
+    type: object
+    config:
+        description: 'Sulu CMS Content Repository.'
+        fields:
+            Page:
+                type: 'Page'
+                args:
+                    id:
+                        description: 'id of a page'
+                        type: 'ID!'
+                resolve: '@=resolver("App\\GraphQL\\Resolver\\PageResolver", [info, args["id"]])'
